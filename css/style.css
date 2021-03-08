@@ -275,8 +275,6 @@ button {
     position: absolute;
     width: 98px;
     height: 98px;
-    right: 95px;
-    top: 157px;
 }
 
 .team__box {
@@ -322,11 +320,82 @@ button {
     color: #567592;
     box-shadow: 0px 2px 8px rgba(86, 117, 146, 0.1);
     border-radius: 26px;
-    display: inline-block;
     position: absolute;
     top: 0;
     right: 0;
     top: -30px;
     right: 75px;
-    width: 281px;
+    white-space: nowrap;
+}
+
+/* добавляю еще для left */
+.team__item-text--right::after,
+.team__item-text--right::before,
+.team__item-text--left::after,
+.team__item-text--left::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.team__item-text--right::after,
+.team__item-text--left::after {
+    width: 17px;
+    height: 17px;
+    bottom: -7px;
+    right: 30px;
+}
+
+.team__item-text--right::before,
+.team__item-text--left::before {
+    width: 9px;
+    height: 9px;
+    bottom: -20px;
+    right: 9px;
+}
+
+/* из team__item перенесла */
+/* координаты для иконок */
+
+.team__item--1 {
+    right: 95px;
+    top: 157px;
+}
+
+.team__item--2 {
+    left: 0;
+    top: 223px;
+}
+
+.team__item--3 {
+    right: 0;
+    bottom: 257px;
+}
+
+.team__item--4 {
+    left: 210px;
+    bottom: 223px;
+}
+
+.team__item--5 {
+    right: 300px;
+    bottom: 135px;
+}
+
+
+.team__item-text.team__item-text--left {
+    top: -41px;
+    left: 62px;
+    right: auto;
+}
+
+.team__item-text--left::before {
+    left: 9px;
+    right: auto;
+}
+
+.team__item-text--left::after {
+    left: 30px;
+    right: auto;
 }
