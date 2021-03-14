@@ -443,8 +443,42 @@ button {
     line-height: 34px;
     color: #2F281E;
     font-weight: 700;
+    transition: all .3s;
+    margin-bottom: 84px;
+    display: inline-block;
 }
 
 .slider__item-title:hover {
     color: #FF9900;
 }
+
+.slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: none;
+    font-size: 0;
+    background-color: #EFEFEF;
+    padding: 0;
+    margin: 0 5px;
+}
+
+.slick-dots .slick-active button {
+    background-color: #FF9900;
+}
+
+.footer__inner {
+    padding: 105px 0 100px;
+    border-top: 1px solid rgba(188, 208, 229, 0.496913);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
